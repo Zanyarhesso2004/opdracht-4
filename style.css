@@ -1,0 +1,76 @@
+/* Mediaquery voor telefoonlay-out */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #7D26CD;
+}
+
+.navbar {
+  background-color: #4B0082;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+.navbar a:hover {
+  background-color: #7D26CD;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 20px 20px;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 0;
+  width: 80%;
+}
+.section:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.section div {
+  flex: 1;
+  font-size: 1.2em;
+}
+.section h2 {
+  font-size: 1.5em;
+}
+.section p {
+  font-size: 1.2em;
+}
+
+img.portfolio-image {
+  width: auto;
+  height: 500px;
+  margin-right: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding-top: 160px;
+  }
+  .section img {
+    width: 200px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .section div {
+    text-align: center;
+  }
+}
